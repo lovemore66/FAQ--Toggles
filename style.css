@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+}
+
+.faq{
+
+    border-radius: 6px;
+
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgb(146, 146, 146);
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.close, .toggle{
+    position: absolute;
+    right: 20px;
+    top:20px;
+}
+
+.faq.active .toggle{
+    display: none;
+}
+
+
+
+
+
+button{
+    font-size: 10px;
+}
+
+.faq.active{
+    background: white;
+}
+
+.question{
+    margin-right: 50px;
+}
+.answer{
+    display: none;
+
+}
+
+.faq .answer{
+    opacity: .1;
+    transition: opacity 6s linear;
+
+}
+.faq.active .answer{
+    display: block;
+
+
+}
+
+.faq.active  .answer{
+    opacity: .8;
+
+}
